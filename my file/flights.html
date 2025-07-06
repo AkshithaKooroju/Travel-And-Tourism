@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flights</title>
+    <style>
+         h1{
+            text-align:center;
+            background-color: #b0bbf3;
+            color:white;
+            height:45px;
+            width:auto;
+            border-radius:10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row{
+            justify-content:space-around;
+            display: flex;
+            height:100px;
+            width:800px;
+            margin:auto;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            box-shadow: 0 0 6px 0 black;
+            margin:40px 25%;
+        }
+
+
+        .row  .image-flight img{
+            height:100px;
+            width:100px;
+            
+        }
+
+        .row .flight-name h4{
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        .row .flight-time h5{
+            font-size: 18px;
+        }
+
+        .row .book{
+            justify-content: center;
+            align-items: center;
+            margin:30px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FLIGHTS</h1>
+
+    <div class="row">
+        <div class="image-flight">
+            <img src="data:image/jpeg;base64,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">
+        </div>
+        <div class="flight-name">
+            <h4>Air India Express</h4>
+        </div>
+        <div class="flight-time">
+            <h5>3:00PM - 4:50PM</h5>
+        </div>
+        <div class="book">
+            <button>BOOK</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-flight">
+            <img src="data:image/png;base64,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">
+        </div>
+        <div class="flight-name">
+            <h4>Akasha Air</h4>
+        </div>
+        <div class="flight-time">
+            <h5>2:30PM - 3:50PM</h5>
+        </div>
+        <div class="book">
+            <button>BOOK</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-flight">
+            <img src="https://www.bing.com/th?id=OTG2.9C3C92AB0A5791AECA3F3C9161EB3613">       
+        </div>
+        <div class="flight-name">
+            <h4>Vistara</h4>
+        </div>
+        <div class="flight-time">
+            <h5>5:40PM - 6:50PM</h5>
+        </div>
+        <div class="book">
+            <button>BOOK</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-flight">
+            <img src="https://www.bing.com/th?id=OTG2.DA70650DAA205B9A36B26D295DB80C16">    
+        </div>
+        <div class="flight-name">
+            <h4>Indigo</h4>
+        </div>
+        <div class="flight-time">
+            <h5>5:50PM - 6:50PM</h5>
+        </div>
+        <div class="book">
+            <button>BOOK</button>
+        </div>
+    </div>
+</body>
+</html>
